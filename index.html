@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="css/timeline.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+      .myshadow {
+        box-shadow:5px 5px 7px rgba(0,0,0,.4)!important;
+        transition:.5s;
+      }
+    </style>
 
     <title>Ketut Krisna</title>
   </head>
@@ -255,7 +262,7 @@
     <!-- pengalaman -->
     <div class="row text-center">
       <div class="col-12" id="pengalaman">
-        <h1 class="mt-5"><i class="bi bi-briefcase-fill"></i> PENGALAMAN</h1>
+        <h1 class="mt-5"><i class="bi bi-briefcase-fill"></i> PENGALAMAN ORGANISASI</h1>
       </div>
     </div>
     <!-- buka list -->
@@ -300,11 +307,129 @@
     <!-- projek -->
     <div class="row text-center">
       <div class="col-12" id="projek">
-        <h1 class="mt-5"><i class="bi bi-stack"></i> PROJEK</h1>
+        <h1 class="mt-5"><i class="bi bi-stack"></i> PORTFOLIO</h1>
       </div>
     </div>
+
+    <style>
+      .hiddencard {
+        overflow:hidden;
+      }
+      .imghover {
+        transition: .5s;
+      }
+    </style>
+    <!-- Portfolio -->
+    <div class="row" style="padding:10px;">
+      <div class="col-6 col-sm-4 col-md-3 col-xl-2" style="padding:10px;">
+        <div class="card shadow hovercard p-1">
+          <div class="hiddencard">
+            <img src="https://meinviteyou.com/assets/img/logook.png" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
+          </div>
+          <div class="card-body p-1">
+            <h5 class="card-title">Meinviteyou</h5>
+            <p style="line-height:17px;">Meinviteyou adalah website pembuatan undangan digital.</p>
+            <p style="line-height:16px;color:#aaa;margin-top:-15px;">Teknologi yang dipakai:</p>
+            <div style="background-color:rgba(255,255,255,.9);line-height:10px;margin-top:-10px;">
+              <i class="bi bi-filetype-php fw-bold tampiltooltip" style="color:#6207f5;font-size:25px;" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP"></i>
+              <span class="tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="CodeIgniter">
+              <svg id="Layer_1" style="width:20px;top:-50px;height:35px;" version="1.1" viewBox="0 60 270 350">
+                <path class="st0" fill="#EE4323" d="M85.2,303.1c-18-7.8-34.8-27.5-34.8-47.7c0-22,13.9-40.7,31.3-53c-2.1,7.9-3.2,15.1,1.9,22.2   c4.8,6.6,13.2,9.8,21.2,8c18.6-4.1,19.4-24.5,8.4-36.4C102.3,184.3,91.8,171,96,153.9c2.1-8.6,7.3-16.6,14-22.3   c-5.1,13.5,9.4,26.7,19,33.4c16.6,11.5,34.9,20.1,50.2,33.6c16.1,14.1,28,33.3,25.6,55.4c-2.6,24-21.7,40.7-43.1,49.2   c45.3-10,92-45.1,93-95.3c0.8-41.3-27.5-73.1-62.6-91.3l-1.8-1c1,2.3,1.3,4.3,1.2,6.1c0.3-1.3,0.5-2.7,0.6-4.1   c0,1.7-0.2,3.4-0.6,4.9l0.1-0.8c-0.5,2.2-1.4,4.3-2.6,6.2l0.5-0.6c-7,11.6-26,14.1-35.3,2.1c-15.1-19.3,0.3-40.2,2.5-60.7   c2.7-25.7-13.4-50.6-33.4-65.5c11,17.8-3.5,41.3-15.1,54.5c-11.2,12.8-24.9,23.4-37.3,35c-13.3,12.4-26.1,25.5-37.1,40.1   c-21.9,29.2-35.3,66-25.5,102.4C18,271.7,49.6,294.9,85.2,303.1L85.2,303.1z"/>
+              </svg>
+              </span>
+              <i class="bi bi-filetype-js fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript" style="color:#f5dd07;font-size:25px;"></i>
+              <i class="bi bi-bootstrap fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap" style="color:#8a07f5;font-size:25px;"></i>
+              <i class="bi bi-filetype-html fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML" style="color:#f58607;font-size:25px;"></i>
+              <i class="bi bi-filetype-css fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS" style="color:#0752f5;font-size:25px;"></i>
+              <img  class="tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="MySql"style="margin-top:-5px;" src="img/sql.svg" width="30" height="30" type="image/svg+xml">
+            </div>
+            <p class="card-text">
+              <a href="https://meinviteyou.com" target="_blank"><span class="btn btn-sm text-white btn-info fw-bold float-end mt-2">Lihat <i class="bi bi-arrow-right-square"></i></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-xl-2" style="padding:10px;">
+        <div class="card shadow hovercard p-1">
+          <div class="hiddencard">
+          <img src="img/lightcreative.jpg" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
+          </div>
+          <div class="card-body p-1">
+            <h5 class="card-title">LightCreative</h5>
+            <p style="line-height:17px;">Lightcreative adalah website Booking Videografer & Fotografer.</p>
+            <p style="line-height:16px;color:#aaa;margin-top:-15px;">Teknologi yang dipakai:</p>
+            <div style="background-color:rgba(255,255,255,.9);line-height:10px;margin-top:-10px;">
+              <i class="bi bi-filetype-php fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP" style="color:#6207f5;font-size:25px;"></i>
+              <span class="tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="CodeIgniter">
+              <svg id="Layer_1" style="width:20px;top:-50px;height:35px;" version="1.1" viewBox="0 60 270 350">
+                <path class="st0" fill="#EE4323" d="M85.2,303.1c-18-7.8-34.8-27.5-34.8-47.7c0-22,13.9-40.7,31.3-53c-2.1,7.9-3.2,15.1,1.9,22.2   c4.8,6.6,13.2,9.8,21.2,8c18.6-4.1,19.4-24.5,8.4-36.4C102.3,184.3,91.8,171,96,153.9c2.1-8.6,7.3-16.6,14-22.3   c-5.1,13.5,9.4,26.7,19,33.4c16.6,11.5,34.9,20.1,50.2,33.6c16.1,14.1,28,33.3,25.6,55.4c-2.6,24-21.7,40.7-43.1,49.2   c45.3-10,92-45.1,93-95.3c0.8-41.3-27.5-73.1-62.6-91.3l-1.8-1c1,2.3,1.3,4.3,1.2,6.1c0.3-1.3,0.5-2.7,0.6-4.1   c0,1.7-0.2,3.4-0.6,4.9l0.1-0.8c-0.5,2.2-1.4,4.3-2.6,6.2l0.5-0.6c-7,11.6-26,14.1-35.3,2.1c-15.1-19.3,0.3-40.2,2.5-60.7   c2.7-25.7-13.4-50.6-33.4-65.5c11,17.8-3.5,41.3-15.1,54.5c-11.2,12.8-24.9,23.4-37.3,35c-13.3,12.4-26.1,25.5-37.1,40.1   c-21.9,29.2-35.3,66-25.5,102.4C18,271.7,49.6,294.9,85.2,303.1L85.2,303.1z"/>
+              </svg>
+              </span>
+              <i class="bi bi-filetype-js fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript" style="color:#f5dd07;font-size:25px;"></i>
+              <img  class="tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Materiallize" style="margin-top:-10px;" src="img/materiallize.svg" width="40" height="40" type="image/svg+xml">
+              <i class="bi bi-filetype-html fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML" style="color:#f58607;font-size:25px;"></i>
+              <i class="bi bi-filetype-css fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS" style="color:#0752f5;font-size:25px;"></i>
+              <img  class="tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="MySql" style="margin-top:-5px;" src="img/sql.svg" width="30" height="30" type="image/svg+xml">
+            </div>
+            <p class="card-text">
+              <a href="http://wayanrida.com" target="_blank"><span class="btn btn-sm text-white btn-info float-end fw-bold">Lihat <i class="bi bi-arrow-right-square"></i></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-xl-2" style="padding:10px;">
+        <div class="card shadow hovercard p-1">
+          <div class="hiddencard">
+          <img src="http://matacode.meinviteyou.com/assets/img/matacode3.png" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
+          </div>
+          <div class="card-body p-1">
+            <h5 class="card-title">Mata Code</h5>
+            <p style="line-height:17px;">Mata Code adalah Blog pribadi tentang code program.</p>
+            <p style="line-height:16px;color:#aaa;margin-top:-15px;">Teknologi yang dipakai:</p>
+            <div style="background-color:rgba(255,255,255,.9);line-height:10px;margin-top:-10px;">
+              <i class="bi bi-filetype-php fw-bold tampiltooltip" style="color:#6207f5;font-size:25px;" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP"></i>
+              <span class="tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="CodeIgniter">
+              <svg id="Layer_1" style="width:20px;top:-50px;height:35px;" version="1.1" viewBox="0 60 270 350">
+                <path class="st0" fill="#EE4323" d="M85.2,303.1c-18-7.8-34.8-27.5-34.8-47.7c0-22,13.9-40.7,31.3-53c-2.1,7.9-3.2,15.1,1.9,22.2   c4.8,6.6,13.2,9.8,21.2,8c18.6-4.1,19.4-24.5,8.4-36.4C102.3,184.3,91.8,171,96,153.9c2.1-8.6,7.3-16.6,14-22.3   c-5.1,13.5,9.4,26.7,19,33.4c16.6,11.5,34.9,20.1,50.2,33.6c16.1,14.1,28,33.3,25.6,55.4c-2.6,24-21.7,40.7-43.1,49.2   c45.3-10,92-45.1,93-95.3c0.8-41.3-27.5-73.1-62.6-91.3l-1.8-1c1,2.3,1.3,4.3,1.2,6.1c0.3-1.3,0.5-2.7,0.6-4.1   c0,1.7-0.2,3.4-0.6,4.9l0.1-0.8c-0.5,2.2-1.4,4.3-2.6,6.2l0.5-0.6c-7,11.6-26,14.1-35.3,2.1c-15.1-19.3,0.3-40.2,2.5-60.7   c2.7-25.7-13.4-50.6-33.4-65.5c11,17.8-3.5,41.3-15.1,54.5c-11.2,12.8-24.9,23.4-37.3,35c-13.3,12.4-26.1,25.5-37.1,40.1   c-21.9,29.2-35.3,66-25.5,102.4C18,271.7,49.6,294.9,85.2,303.1L85.2,303.1z"/>
+              </svg>
+              </span>
+              <i class="bi bi-filetype-js fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript" style="color:#f5dd07;font-size:25px;"></i>
+              <i class="bi bi-bootstrap fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap" style="color:#8a07f5;font-size:25px;"></i>
+              <i class="bi bi-filetype-html fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML" style="color:#f58607;font-size:25px;"></i>
+              <i class="bi bi-filetype-css fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS" style="color:#0752f5;font-size:25px;"></i>
+              <img  class="tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="MySql"style="margin-top:-5px;" src="img/sql.svg" width="30" height="30" type="image/svg+xml">
+            </div>            
+            <p class="card-text">
+              <a href="http://matacode.meinviteyou.com/" target="_blank"><span class="btn btn-sm text-white btn-info float-end fw-bold">Lihat <i class="bi bi-arrow-right-square"></i></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-xl-2" style="padding:10px;">
+        <div class="card shadow hovercard p-1">
+          <div class="hiddencard">
+          <img src="img/uangkaget.jpg" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
+          </div>
+          <div class="card-body p-1">
+            <h5 class="card-title">Uang Kaget</h5>
+            <p style="line-height:17px;">Uang kaget adalah sebuah game mencari uang yang tersembunyi.</p>
+            <p style="line-height:16px;color:#aaa;margin-top:-15px;">Teknologi yang dipakai:</p>
+            <div style="background-color:rgba(255,255,255,.9);line-height:10px;margin-top:-10px;">
+              <i class="bi bi-filetype-js fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript" style="color:#f5dd07;font-size:25px;"></i>
+              <i class="bi bi-bootstrap fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap" style="color:#8a07f5;font-size:25px;"></i>
+              <i class="bi bi-filetype-html fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML" style="color:#f58607;font-size:25px;"></i>
+              <i class="bi bi-filetype-css fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS" style="color:#0752f5;font-size:25px;"></i>
+            </div>            
+            <p class="card-text">
+              <a href="https://ketutkrisna.github.io/tugas-ahir-prakerja/" target="_blank"><span class="btn btn-sm text-white btn-info float-end fw-bold">Lihat <i class="bi bi-arrow-right-square"></i></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tutup Portfolio -->
     <!-- list projek -->
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-md-12">
             <div class="main-timeline6 d-flex justify-content-center" data-aos="zoom-in" style="width:100%;padding:25px">
                 <div class="timeline d-flex justify-content-center" style="width:100%">
@@ -334,7 +459,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- tutup list projek -->
     <!-- tutup projek -->
     <!-- hobi -->
@@ -439,11 +564,11 @@
     <!-- tutup footer -->
     <!-- side bar -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="offcanvasExampleLabel" style="width:300px">
-      <div class="offcanvas-header" style="background-color:black;height:200px">
+      <div class="offcanvas-header" style="background-color:black;min-height:200px">
         <div style="">
-        <img src="img/kkwhite.png" style="width:170px;height:170px;position:absolute;left:0;right:0;margin:0 auto;">
+        <img src="img/kkwhite.png" style="width:170px;height:170px;position:absolute;top:10px;left:0;right:0;margin:0 auto;">
         </div>
-        <button type="button" class="btn-close bg-light text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button style="top:20px;position:absolute;right:20px;" type="button" class="btn-close bg-light text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <div>
@@ -465,12 +590,13 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> -->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -481,6 +607,35 @@
       })
       var d = new Date();
       document.getElementById("tahunsekarang").innerHTML = d.getFullYear();
+
+      $( ".tampiltooltip" ).each(function( i ) {
+        // var example = document.getElementsByClassName("tampiltooltip")[i];
+        new bootstrap.Tooltip($('.tampiltooltip')[i]);
+      });
+
+      $('.hovercard').on('mouseover', function(e){
+        // $(this).css({
+        //   'transform' : 'scale(1.1)',
+        //   'transition' : '.3s'
+        // });
+        $(this).addClass('myshadow');
+        $(this).find('.imghover').css({
+          'transform' : 'rotate(15deg) scale(1.5)',
+          'transition' : '.5s'
+        });
+      });
+      $('.hovercard').on('mouseout', function(e){
+        // e.stopPropagation();
+        // $(this).css({
+        //   'transform' : 'scale(1)',
+        //   'transition' : '.3s'
+        // });
+        $(this).removeClass('myshadow');
+        $(this).find('.imghover').css({
+          'transform' : 'rotate(0deg) scale(1)',
+          'transition' : '.5s'
+        });
+      });
 
       // $('.geo').on('click',function(){
       //   if (navigator.geolocation)navigator.geolocation.getCurrentPosition(function(position){        console.log(position);
