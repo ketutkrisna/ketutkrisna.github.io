@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/timeline.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -16,16 +17,32 @@
         box-shadow:5px 5px 7px rgba(0,0,0,.4)!important;
         transition:.5s;
       }
+      .shadowbox {
+        box-shadow:4px 4px 4px rgba(0,0,0,.2)!important; 
+      }
+      .textcolor {
+        color:#616161;
+      }
+      .popover {
+        border:1px solid #eee;
+        box-shadow:2px 2px 4px rgba(0,0,0,.3)!important;
+      }
+      .shadowtitle {
+        text-shadow: 3px 3px 7px rgba(0,0,0,.2);
+      }
+      .shadowjudul {
+        text-shadow: 2px 2px 2px rgba(0,0,0,.1);
+      }
     </style>
 
     <title>Ketut Krisna</title>
   </head>
-  <body style="overflow-x:hidden;position:relative;" id="beranda">
+  <body style="overflow-x:hidden!important;position:relative;font-family: 'Varela Round', sans-serif;" id="beranda">
     <!-- navbar -->
     <nav class="navbar navbar-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#!">
-          <button data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasExample" class="navbar-toggler bg-info border border-info border-2 shadow-sm" type="button" aria-expanded="false" aria-label="Toggle navigation">
+          <button data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasExample" class="navbar-toggler bg-info border border-info border-2 shadow" type="button" aria-expanded="false" aria-label="Toggle navigation">
             <span data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasExample" class="navbar-toggler-icon"></span>
           </button>
         </a>
@@ -33,7 +50,7 @@
     </nav>
     <!-- tutup navbar -->
     <!-- jumbotron header -->
-    <div class="shadow-lg" style="height:450px;background-image:url('img/kk3d1.png');background-size:300px 300px;background-position:50% 50px;background-repeat:no-repeat;background-attachment:fixed;border-bottom:1px solid #0dcaf0;">
+    <div class="" style="height:450px;background-image:url('img/kk3d1.png');background-size:300px 300px;background-position:50% 50px;background-repeat:no-repeat;background-attachment:fixed;border-bottom:1px solid #eee;">
       <div class="container">
       </div>
     </div>
@@ -41,15 +58,15 @@
     <!-- card info -->
     <div class="row d-lg-none d-xl-block d-xl-none d-xxl-block">
       <div class="col-12 d-flex justify-content-center">
-      <div class="card shadow border border-info border-1" data-aos="fade-down" style="width:95%;margin-top:-110px;">
-        <img src="img/pp.jpg" class="rounded-circle img-thumbnail border border-info border-1" alt="foto profil" style="position:absolute;margin:-90px auto;width:150px;height:150px;left:0;right:0;">
-        <div class="card-body">
-          <h2 class="card-title text-center mt-5" style="margin-bottom:-5px">KETUT KRISNA SANJAYA</h2>
+      <div class="card shadowbox" data-aos="fade-down" style="width:95%;margin-top:-110px;border-radius:10px;border:1px solid #eee;">
+        <img src="img/pp.jpg" class="rounded-circle img-thumbnail" alt="foto profil" style="position:absolute;margin:-90px auto;width:150px;height:150px;left:0;right:0;">
+        <div class="card-body textcolor">
+          <h2 class="card-title text-center mt-5 shadowjudul" style="margin-bottom:-5px">KETUT KRISNA SANJAYA</h2>
           <p class="card-title text-center" style="margin-top:-0px!important;">Programmer | Web Developert | Video Editing</p>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item"><i class="bi bi-telephone-fill"></i> 0821-7947-1533</li>
-            <li class="list-group-item"><i class="bi bi-envelope-fill"></i> ketutkrisna21@gmail.com</li>
-            <li class="list-group-item"><i class="bi bi-instagram"></i> @ketutkrisna21</li>
+            <li class="list-group-item textcolor"><i class="bi bi-telephone-fill"></i> 0821-7947-1533</li>
+            <li class="list-group-item textcolor"><i class="bi bi-envelope-fill"></i> ketutkrisna21@gmail.com</li>
+            <li class="list-group-item textcolor"><i class="bi bi-instagram"></i> @ketutkrisna21</li>
            <!--  <li class="list-group-item d-flex"><i class="bi bi-geo-alt-fill me-1"></i> Way Kanan, Bandar Lampung, Lampung, Indonesia</li> -->
           </ul>
           <span class="ms-3">
@@ -66,15 +83,15 @@
     <!-- card info -->
     <div class="row d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block">
       <div class="col-12 d-flex justify-content-center">
-      <div class="card shadow border border-info border-1" data-aos="fade-down" style="width:95%;margin-top:-110px;">
-        <div class="card-body d-flex justify-content-between p-0">
+      <div class="card shadowbox" data-aos="fade-down" style="width:95%;margin-top:-110px;overflow:hidden;border-radius:10px;border:1px solid #eee;">
+        <div class="card-body textcolor d-flex justify-content-between p-0">
           <div class="mt-1 ms-1">
-          <h2 class="card-title mt-1 ms-3" style="margin-bottom:-5px">KETUT KRISNA SANJAYA</h2>
+          <h2 class="card-title mt-1 ms-3 shadowjudul" style="margin-bottom:-5px">KETUT KRISNA SANJAYA</h2>
           <p class="card-title ms-3" style="margin-top:-0px!important;">Programmer | Web Developert | Video Editing</p>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item"><i class="bi bi-telephone-fill"></i> 0821-7947-1533</li>
-            <li class="list-group-item"><i class="bi bi-envelope-fill"></i> ketutkrisna21@gmail.com</li>
-            <li class="list-group-item"><i class="bi bi-instagram"></i> @ketutkrisna21</li>
+            <li class="list-group-item textcolor"><i class="bi bi-telephone-fill"></i> 0821-7947-1533</li>
+            <li class="list-group-item textcolor"><i class="bi bi-envelope-fill"></i> ketutkrisna21@gmail.com</li>
+            <li class="list-group-item textcolor"><i class="bi bi-instagram"></i> @ketutkrisna21</li>
             <!-- <li class="list-group-item d-flex"><i class="bi bi-geo-alt-fill me-1"></i> Padang Sambian Kaje, Denpasar, Bali, Indonesia</li> -->
           </ul>
           <span class="ms-3">
@@ -95,17 +112,16 @@
     <!-- card pengenalan -->
     <div class="row">
       <div class="col-12 d-flex justify-content-center" id="tentang">
-      <div class="card shadow mt-4 border border-info border-1" data-aos="zoom-in" style="width:95%;">
-        <div class="card-body">
+      <div class="card shadowbox mt-4" data-aos="zoom-in" style="width:95%;border-radius:10px;border:1px solid #eee;">
+        <div class="card-body textcolor">
+          <div class="container">
           <p class="card-title text-center">Hallo! Perkenalkan saya Ketut Krisna Sanjaya, Saya Alumni Jurusan Teknik Informatika di Institut Informatika & Bisnis Darmajaya. Hal yang paling saya sukai adalah Membuat Program Web dan Video Editing. Ini adalah Personal Website saya</p>
           <hr>
           <div class="row text-center">
-            <div class="col-12 col-sm-6 mb-2">
-              <a href="img/cvku.jpg" type="button" class="btn btn-sm btn-outline-dark text-info">CURRICULUM VITAE</a>
+            <div class="col-12 mb-2">
+              <a href="img/cvku.jpg" type="button" class="btn btn-sm btn-info shadow-sm text-white">CURRICULUM VITAE</a>
             </div>
-            <div class="col-12 col-sm-6 mb-2">
-              <a href="https://api.whatsapp.com/send?phone=+6282179471533" type="button" class="btn btn-sm btn-outline-dark text-info">KONTAK SAYA</a>
-            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -114,47 +130,47 @@
     <!-- tutup card pengenalan -->
     <!-- pendidikan -->
     <div class="row text-center">
-      <div class="col-12" id="pendidikan">
-        <h1 class="mt-5"><i class="bi bi-book-fill fs-1"></i> PENDIDIKAN</h1>
+      <div class="col-12 mt-5" id="pendidikan">
+        <h1 class="mt-5 textcolor shadowtitle"><i class="bi bi-book-fill fs-1"></i> PENDIDIKAN</h1>
       </div>
     </div>
     <!-- time line -->
     <div class="row">
         <div class="col-md-12">
-            <div class="main-timeline3 m-3">
+            <div class="main-timeline3 m-3 textcolor">
                 <div class="timeline">
-                    <a href="#!" class="timeline-content border-danger border border-1 shadow" data-aos="fade-up">
-                        <span class="year">2000 - 2006</span>
-                        <h3 class="title">SD</h3>
+                    <a href="#!" class="timeline-content shadowbox" style="border-radius:10px;border:1px solid #eee;" data-aos="fade-up">
+                        <span class="year">SD</span>
+                        <h3 class="title mt-1">2000 - 2006</h3>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            SD Negeri 1 Mulyasari
                         </p>
                     </a>
                 </div>
                 <div class="timeline">
-                    <a href="#!" class="timeline-content border-primary border border-1 shadow" data-aos="fade-up">
-                        <span class="year">2006 - 2009</span>
-                        <h3 class="title">SMP</h3>
+                    <a href="#!" class="timeline-content shadowbox" style="border-radius:10px;border:1px solid #eee;" data-aos="fade-up">
+                        <span class="year">SMP</span>
+                        <h3 class="title mt-1">2006 - 2009</h3>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            SMPN 4 Negeri agung Way kanan Lampung
                         </p>
                     </a>
                 </div>
                 <div class="timeline">
-                    <a href="#!" class="timeline-content border-info border border-1 shadow" data-aos="fade-up">
-                        <span class="year">2009 - 2012</span>
-                        <h3 class="title">SMA</h3>
+                    <a href="#!" class="timeline-content shadowbox" style="border-radius:10px;border:1px solid #eee;" data-aos="fade-up">
+                        <span class="year">SMA</span>
+                        <h3 class="title mt-1">2009 - 2012</h3>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            SMA UTAMA 2 Pahoman Bandar Lampung
                         </p>
                     </a>
                 </div>
                 <div class="timeline">
-                    <a href="#!" class="timeline-content border-success border border-1 shadow" data-aos="fade-up">
-                        <span class="year">2012 - 2017</span>
-                        <h3 class="title">IBI Darmajaya</h3>
+                    <a href="#!" class="timeline-content shadowbox" style="border-radius:10px;border:1px solid #eee;" data-aos="fade-up">
+                        <span class="year">Perguruan Tinggi</span>
+                        <h3 class="title mt-1">2012 - 2017</h3>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            IBI Darmajaya Raja Basa Bandar Lampung
                         </p>
                     </a>
                 </div>
@@ -163,117 +179,22 @@
     </div>
     <!-- tutup time line -->
     <!-- tutup pendidikan -->
-    <!-- skill -->
-    <div class="row text-center">
-      <div class="col-12" id="kemampuan">
-        <h1 class="mt-5"><i class="bi bi-list-stars fs-1"></i> KEMAMPUAN</h1>
-      </div>
-    </div>
-    <!-- list kemampuan -->
-    <div class="row">
-      <div class="col-12">
-      <div class="card shadow m-3 border border-info border-1" data-aos="zoom-in">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-4 mb-4">
-              <h5 class="text-center">WEB</h5>
-              <span style="font-size:15px;">HTML</span>
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <span style="font-size:15px;">CSS</span>
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <span style="font-size:15px;">JavaScript</span>
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <span style="font-size:15px;">PHP</span>
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <span style="font-size:15px;">MYSQL</span>
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <span style="font-size:15px;">Codeigniter</span>
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <span style="font-size:15px;">Bootstrap</span>
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <span style="font-size:15px;">Materiallize</span>
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <span style="font-size:15px;">Jquery</span>
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <span style="font-size:15px;">GIT (Version Control Sistem)</span>
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <span style="font-size:15px;">GITHUB</span>
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <!-- multimedia -->
-            <div class="col-md-4 mb-4">
-              <h5 class="text-center">MULTIMEDIA</h5>
-              <span style="font-size:15px;">Adobe Premiere Pro</span>
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <span style="font-size:15px;">Photoshop</span>
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <!-- tutup multimedia -->
-            <!-- office -->
-            <div class="col-md-4 mb-4">
-              <h5 class="text-center">OFFICE</h5>
-              <span style="font-size:15px;">Ms. Office Word</span>
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <span style="font-size:15px;">Ms. Office Exel</span>Ms. Power Point
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <span style="font-size:15px;">Ms. Power Point</span>
-              <div class="progress" style="height:7px;margin-bottom:7px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <!-- tutup office -->
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
-    <!-- tutup list kemampuan -->
-    <!-- tutup skill -->
+
     <!-- pengalaman -->
     <div class="row text-center">
-      <div class="col-12" id="pengalaman">
-        <h1 class="mt-5"><i class="bi bi-briefcase-fill"></i> PENGALAMAN ORGANISASI</h1>
+      <div class="col-12 mt-5" id="pengalaman">
+        <h1 class="mt-5 textcolor shadowtitle"><i class="bi bi-briefcase-fill"></i> PENGALAMAN ORGANISASI</h1>
       </div>
     </div>
     <!-- buka list -->
     <div class="row">
         <div class="col-md-12">
-            <div class="main-timeline2 me-3 ms-3" style="padding-top:25px">
+            <div class="main-timeline2 me-3 ms-3 textcolor" style="padding-top:25px">
                 <div class="timeline">
                     <span class="icon fa fa-globe"></span>
-                    <a href="#" class="timeline-content bg-light text-dark border border-danger border-1 shadow" data-aos="fade-up">
-                        <h3 class="title text-danger">KBKM</h3>
-                        <p class="description">
+                    <a href="#" class="timeline-content bg-light shadowbox" style="border:1px solid #eee;" data-aos="fade-up">
+                        <h3 class="title text-danger textcolor">KBKM</h3>
+                        <p class="description textcolor">
                             Pernah menjadi anggota Kegiatan Belajar Kelompok Mahasiswa(KBKM) IBI Darmajaya dari tahun 2012-2013. <br>
                             KBKM adalah tempat sharing dan tempat berkumpulnya mahasiswa IT ibi darmajaya.
                         </p>
@@ -281,9 +202,9 @@
                 </div>
                 <div class="timeline">
                     <span class="icon fa fa-rocket"></span>
-                    <a href="#" class="timeline-content bg-light text-dark border border-info border-1 shadow" data-aos="fade-up">
-                        <h3 class="title text-info">PERMADU</h3>
-                        <p class="description">
+                    <a href="#" class="timeline-content bg-light shadowbox" style="border:1px solid #eee;" data-aos="fade-up">
+                        <h3 class="title text-info textcolor">PERMADU</h3>
+                        <p class="description textcolor">
                             Pernah menjadi anggota UKM Permadu(Persatuan Mahasiswa Hindu) IBI Darmajaya dari tahun 2012-2014. <br>
                             UKM Permadu adalah tempat berkumpulnya mahasiswa hindu ibi darmajaya untuk sharing dan melakukan kegiatan-kegiatan keagamaan.
                         </p>
@@ -291,9 +212,9 @@
                 </div>
                 <div class="timeline">
                     <span class="icon fa fa-briefcase"></span>
-                    <a href="#" class="timeline-content bg-light text-dark border border-warning border-1 shadow" data-aos="fade-up">
-                        <h3 class="title text-warning">PKPM</h3>
-                        <p class="description">
+                    <a href="#" class="timeline-content bg-light shadowbox" style="border:1px solid #eee;" data-aos="fade-up">
+                        <h3 class="title text-warning textcolor">PKPM</h3>
+                        <p class="description textcolor">
                             Mengikutin Praktek Kerja Pengabdian Masyarakat(PKPM) ibi darmajaya pada tahun 2016 di pekon Argopeni Tanggamus Lampung.
                             PKPM adalah Praktek Kerja Pengabdian Masyarakat yaitu dengan cara kita berbaur langsung dengan masyarakat dan melakukan penelitian ditempat tersebut.
                         </p>
@@ -304,10 +225,158 @@
     </div>
     <!-- tutup buka list -->
     <!-- tutup pengalaman -->
+
+    <!-- skill -->
+    <div class="row text-center">
+      <div class="col-12 mt-5" id="kemampuan">
+        <h1 class="mt-5 textcolor shadowtitle"><i class="bi bi-list-stars fs-1"></i> KEMAMPUAN</h1>
+      </div>
+    </div>
+    <style>
+      .scaleskill {
+        transition:.3s;
+        box-shadow:2px 2px 2px rgba(0,0,0,.2);
+      }
+      .scaleskill:hover {
+        transform:scale(1.2);
+        box-shadow:3px 3px 3px rgba(0,0,0,.3);
+        transition:.3s;
+      }
+    </style>
+    <!-- list kemampuan -->
+    <div class="row">
+      <div class="col-12">
+      <div class="card shadowbox m-3" data-aos="zoom-in">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6 mb-5">
+              <div class="row">
+              <h5 class="text-center textcolor">WEB</h5>
+                <div style="display:flex;flex-wrap:wrap;justify-content:center;">
+                  <div class="card m-2 scaleskill" style="width:100px">
+                    <img src="img/skill/phpweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
+                    <div class="card-body p-0">
+                      <p class="card-text text-center textcolor">PHP</p>
+                    </div>
+                  </div>
+                  <div class="card m-2 scaleskill" style="width:100px">
+                    <img src="img/skill/codeigniterweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
+                    <div class="card-body p-0">
+                      <p class="card-text text-center textcolor">CodeIgniter</p>
+                    </div>
+                  </div>
+                  <div class="card m-2 scaleskill" style="width:100px">
+                    <img src="img/skill/jqueryweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
+                    <div class="card-body p-0">
+                      <p class="card-text text-center textcolor">JQuery</p>
+                    </div>
+                  </div>
+                  <div class="card m-2 scaleskill" style="width:100px">
+                    <img src="img/skill/jsweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
+                    <div class="card-body p-0">
+                      <p class="card-text text-center textcolor">JavaScript</p>
+                    </div>
+                  </div>
+                  <div class="card m-2 scaleskill" style="width:100px">
+                    <img src="img/skill/htmlweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
+                    <div class="card-body p-0">
+                      <p class="card-text text-center textcolor">HTML</p>
+                    </div>
+                  </div>
+                  <div class="card m-2 scaleskill" style="width:100px">
+                    <img src="img/skill/cssweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
+                    <div class="card-body p-0">
+                      <p class="card-text text-center textcolor">CSS</p>
+                    </div>
+                  </div>
+                  <div class="card m-2 scaleskill" style="width:100px">
+                    <img src="img/skill/bootstrapweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
+                    <div class="card-body p-0">
+                      <p class="card-text text-center textcolor">Bootstrap</p>
+                    </div>
+                  </div>
+                  <div class="card m-2 scaleskill" style="width:100px">
+                    <img src="img/skill/materiallizeweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
+                    <div class="card-body p-0">
+                      <p class="card-text text-center textcolor">Materiallize</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <h5 class="text-center mt-5 textcolor">VERSION COTROL</h5>
+                <div style="display:flex;flex-wrap:wrap;justify-content:center;">
+                  <div class="card m-2 scaleskill" style="width:100px">
+                    <img src="img/skill/gitweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
+                    <div class="card-body p-0">
+                      <p class="card-text text-center textcolor">GIT</p>
+                    </div>
+                  </div>
+                  <div class="card m-2 scaleskill" style="width:100px">
+                    <img src="img/skill/githubweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
+                    <div class="card-body p-0">
+                      <p class="card-text text-center textcolor">GITHUB</p>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <!-- multimedia -->
+            <div class="col-md-6 mb-5">
+              <div class="row">
+                <h5 class="text-center textcolor">MULTIMEDIA</h5>
+                <div style="display:flex;flex-wrap:wrap;justify-content:center;">
+                  <div class="card m-2 scaleskill" style="width:100px">
+                    <img src="img/skill/premiereweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
+                    <div class="card-body p-0">
+                      <p class="card-text text-center textcolor">Premiere</p>
+                    </div>
+                  </div>
+                  <div class="card m-2 scaleskill" style="width:100px">
+                    <img src="img/skill/photoshopweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
+                    <div class="card-body p-0">
+                      <p class="card-text text-center textcolor">Photoshop</p>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="row">
+                <h5 class="text-center mt-5 textcolor">OFFICE</h5>
+                <div style="display:flex;flex-wrap:wrap;justify-content:center;">
+                  <div class="card m-2 scaleskill" style="width:100px">
+                    <img src="img/skill/wordweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
+                    <div class="card-body p-0">
+                      <p class="card-text text-center textcolor">Ms. Word</p>
+                    </div>
+                  </div>
+                  <div class="card m-2 scaleskill" style="width:100px">
+                    <img src="img/skill/exelweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
+                    <div class="card-body p-0">
+                      <p class="card-text text-center textcolor">Ms. Exel</p>
+                    </div>
+                  </div>
+                  <div class="card m-2 scaleskill" style="width:100px">
+                    <img src="img/skill/pointweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
+                    <div class="card-body p-0">
+                      <p class="card-text text-center textcolor">Power Point</p>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- tutup list kemampuan -->
+    <!-- tutup skill -->
+
     <!-- projek -->
     <div class="row text-center">
-      <div class="col-12" id="projek">
-        <h1 class="mt-5"><i class="bi bi-stack"></i> PORTFOLIO</h1>
+      <div class="col-12 mt-5" id="projek">
+        <h1 class="mt-5 textcolor shadowtitle"><i class="bi bi-stack"></i> PORTFOLIO</h1>
       </div>
     </div>
 
@@ -318,13 +387,16 @@
       .imghover {
         transition: .5s;
       }
+      .hovercard {
+        border-radius:10px;
+      }
     </style>
     <!-- Portfolio -->
-    <div class="row" style="padding:10px;">
-      <div class="col-12 col-sm-6 col-md-4 col-xl-3" style="padding:10px;">
+    <div class="row textcolor" style="padding:15px;">
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3" style="padding:15px;">
         <div class="card shadow hovercard p-1">
           <div class="hiddencard">
-            <img src="img/meinviteyou.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
+            <img src="img/portfolio/meinviteyou.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
           </div>
           <div class="card-body p-1">
             <h5 class="card-title">MEINVITEYOU</h5>
@@ -352,7 +424,7 @@
       <div class="col-12 col-sm-6 col-md-4 col-xl-3" style="padding:10px;">
         <div class="card shadow hovercard p-1">
           <div class="hiddencard">
-          <img src="img/lightcreative.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
+          <img src="img/portfolio/lightcreative.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
           </div>
           <div class="card-body p-1">
             <h5 class="card-title">LIGHTCREATIVE</h5>
@@ -380,7 +452,7 @@
       <div class="col-12 col-sm-6 col-md-4 col-xl-3" style="padding:10px;">
         <div class="card shadow hovercard p-1">
           <div class="hiddencard">
-          <img src="img/matacode.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
+          <img src="img/portfolio/matacode.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
           </div>
           <div class="card-body p-1">
             <h5 class="card-title">MATA CODE</h5>
@@ -408,7 +480,7 @@
       <div class="col-12 col-sm-6 col-md-4 col-xl-3" style="padding:10px;">
         <div class="card shadow hovercard p-1">
           <div class="hiddencard">
-          <img src="img/uangkaget.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
+          <img src="img/portfolio/uangkaget.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
           </div>
           <div class="card-body p-1">
             <h5 class="card-title">UANG KAGET</h5>
@@ -429,7 +501,7 @@
       <div class="col-12 col-sm-6 col-md-4 col-xl-3" style="padding:10px;">
         <div class="card shadow hovercard p-1">
           <div class="hiddencard">
-          <img src="img/linkids.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
+          <img src="img/portfolio/linkids.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
           </div>
           <div class="card-body p-1">
             <h5 class="card-title">LINKIDS</h5>
@@ -457,7 +529,7 @@
       <div class="col-12 col-sm-6 col-md-4 col-xl-3" style="padding:10px;">
         <div class="card shadow hovercard p-1">
           <div class="hiddencard">
-          <img src="img/stt.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
+          <img src="img/portfolio/stt.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
           </div>
           <div class="card-body p-1">
             <h5 class="card-title">STT KERTASARI</h5>
@@ -484,70 +556,51 @@
       </div>
     </div>
     <!-- Tutup Portfolio -->
-    <!-- list projek -->
-    <!-- <div class="row">
-        <div class="col-md-12">
-            <div class="main-timeline6 d-flex justify-content-center" data-aos="zoom-in" style="width:100%;padding:25px">
-                <div class="timeline d-flex justify-content-center" style="width:100%">
-                    <div class="timeline-content border border-2 border-primary">
-                        <span class="year" style="opacity:0;font-size:25px">2018</span>
-                        <div class="content-inner border border-1 border-primary bg-light">
-                            <span class="icon"><i class="bi bi-stack text-primary"></i></span>
-                            <h3 class="title text-primary">Aplikasi Undangan Digital</h3>
-                            <p class="description text-dark mb-4">
-                                Pembuatan Aplikasi undangan digital pada perusahaan meinviteyou. 
-                                <a target="_blank" href="https://meinviteyou.com" class="btn btn-sm border border-1 border-primary">Lihat</a>
-                            </p>
-                            <h3 class="title text-primary">Aplikasi Booking Videografer & Fotografer</h3>
-                            <p class="description text-dark mb-4">
-                                Pembuatan Aplikasi Booking Videografer & Fotografer pada perusahaan Lightcreative. <a target="_blank" href="https://wayanrida.com" class="btn btn-sm border border-1 border-primary">Lihat</a>
-                            </p>
-                            <h3 class="title text-primary">Aplikasi Pemesanan Sablon</h3>
-                            <p class="description text-dark mb-4">
-                                Pembuatan Aplikasi pemesanan Sablon pada RGB Sablon Lampung. <a target="_blank" href="http://rgbsablonlampung.epizy.com" class="btn btn-sm border border-1 border-primary">Lihat</a>
-                            </p>
-                            <h3 class="title text-primary">Sistem Infomasi karang taruna STT Kertasari</h3>
-                            <p class="description text-dark mb-4">
-                                Pembuatan Aplikasi Sistem Informasi pada karang taruna STT Kertasari Jalur 3 Mulyasari Way Kanan Lampung. <a target="_blank" href="https://sttkertasari.000webhostapp.com" class="btn btn-sm border border-1 border-primary">Lihat</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- tutup list projek -->
     <!-- tutup projek -->
     <!-- hobi -->
     <div class="row text-center">
-      <div class="col-12" id="hobi">
-        <h1 class="mt-5"><i class="bi bi-heart-fill"></i> HOBI</h1>
+      <div class="col-12 mt-5" id="hobi">
+        <h1 class="mt-5 textcolor shadowtitle"><i class="bi bi-heart-fill"></i> HOBI</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 text-center ps-4 pe-4">
+      <div class="col-12 text-center ps-4 pe-4 textcolor">
         <p>Saya memili ketertarikan dan Fashion di Bidang IT terutama pada bidang Program dan Multimedia seperti Program Website,Editing Video dan Desain Grafis Saya juga merupakan penggemar olahraga Sepakbola, volly dan Bulu Tangkis. Dulu saya sangat suka bermain game, tapi sekarang sudah jarang karena lebih tertarik dengan membuat program web. Saya sering menonton film, film kesukaan saya adalah film action dan saya juga suka mendengarkan musik, musik saya sukai beraliran deathcore dan metalcore.</p>
       </div>
     </div>
+    <style>
+      .scalehobi {
+        transition:.3s;
+      }
+      .shadowhobi {
+        box-shadow:2px 2px 5px rgba(0,0,0,.2);
+        border-radius:10px;
+      }
+      .scalehobi:hover {
+        /*transform:scale(1.1)!important;*/
+        box-shadow:3px 3px 6px rgba(0,0,0,.3);
+        transition:.3s;
+      }
+    </style>
     <!-- list hobi -->
     <div class="row pe-4 ps-4">
       <div class="col-12 col-md-6 col-xl-3">
-        <div class="text-center fs-1 rounded-1 p-2" id="tolahraga" data-bs-toggle="popover" data-bs-placement="top" title="Olahraga" data-bs-content="<div class='text-success fw-bold'>1.Sepak Bola <br> 2.Bulu Tangkis <br> 3.Volly</div>" data-aos="fade-up" style="border-left:4px solid #198754;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
+        <div class="text-center fs-1 p-2 textcolor mt-3 shadowhobi scalehobi" id="tolahraga" data-bs-toggle="popover" data-bs-placement="top" title="Olahraga" data-bs-content="<div class='text-success fw-bold'>1.Sepak Bola <br> 2.Bulu Tangkis <br> 3.Volly</div>" data-aos="fade-up" style="border-left:4px solid #198754;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
           <i class="bi bi-life-preserver text-success"></i> OlahRaga
         </div>
       </div>
       <div class="col-12 col-md-6 col-xl-3">
-        <div class="text-center fs-1 rounded-1 p-2" id="tgame" data-bs-toggle="popover" data-bs-placement="top" title="Game" data-bs-content="<div class='text-danger fw-bold'>1.PES <br> 2.Guitar Hero <br> 3.Class Of Gods <br> 4.Point Blank</div>" data-aos="fade-up" style="border-left:4px solid #D9534F;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
+        <div class="text-center fs-1 p-2 textcolor mt-3 shadowhobi scalehobi" id="tgame" data-bs-toggle="popover" data-bs-placement="top" title="Game" data-bs-content="<div class='text-danger fw-bold'>1.PES <br> 2.Guitar Hero <br> 3.Class Of Gods <br> 4.Point Blank</div>" data-aos="fade-up" style="border-left:4px solid #D9534F;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
           <i class="bi bi-controller text-danger"></i> Game
         </div>
       </div>
       <div class="col-12 col-md-6 col-xl-3">
-        <div class="text-center fs-1 rounded-1 p-2" id="tfilm" data-bs-toggle="popover" data-bs-placement="top" title="Film" data-bs-content="<div class='text-info fw-bold'>1.Actions <br> 2.Hacker <br> 3.Anime</div>" data-aos="fade-up" style="border-left:4px solid #5BC0DE;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
+        <div class="text-center fs-1 p-2 textcolor mt-3 shadowhobi scalehobi" id="tfilm" data-bs-toggle="popover" data-bs-placement="top" title="Film" data-bs-content="<div class='text-info fw-bold'>1.Actions <br> 2.Hacker <br> 3.Anime</div>" data-aos="fade-up" style="border-left:4px solid #5BC0DE;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
           <i class="bi bi-film text-info"></i> Film
         </div>
       </div>
       <div class="col-12 col-md-6 col-xl-3">
-        <div class="text-center fs-1 rounded-1 p-2" id="tmusik" data-bs-toggle="popover" data-bs-placement="top" title="Musik" data-bs-content="<div class='text-warning fw-bold'>1.Deathcore <br> 2.Ska <br> 3.Rock <br> 4.Dangdut Modern</div>" data-aos="fade-up" style="border-left:4px solid #F0AD4E;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
+        <div class="text-center fs-1 p-2 textcolor mt-3 shadowhobi scalehobi" id="tmusik" data-bs-toggle="popover" data-bs-placement="top" title="Musik" data-bs-content="<div class='text-warning fw-bold'>1.Deathcore <br> 2.Ska <br> 3.Rock <br> 4.Dangdut Modern</div>" data-aos="fade-up" style="border-left:4px solid #F0AD4E;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
           <i class="bi bi-music-note-beamed text-warning"></i> Musik
         </div>
       </div>
@@ -562,21 +615,21 @@
     </style>
     <!-- kutipan -->
     <div class="row text-center">
-      <div class="col-12" id="kutipan">
-        <h1 class="mt-5"><i class="bi bi-hash"></i> KUTIPAN FAVORIT</h1>
+      <div class="col-12 mt-5" id="kutipan">
+        <h1 class="mt-5 textcolor shadowtitle"><i class="bi bi-hash"></i> KUTIPAN FAVORIT</h1>
       </div>
     </div>
     <!-- list kutipan -->
-    <div id="carouselExampleDark" class="carousel carousel-dark slide m-3 border-1 border border-info rounded-1" data-bs-ride="carousel">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide m-3 shadowbox" style="border-radius:10px;border:1px solid #eee;" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner p-2 shadow" style="height:270px">
+      <div class="carousel-inner p-2 textcolor" style="height:270px">
         <div class="carousel-item active" data-bs-interval="10000">
           <div class="d-flex justify-content-center">
-          <img src="img/gates1.jpg" class="d-block rounded-circle" alt="Bill Gates" style="width:120px;height:120px;">
+          <img src="img/gates1.jpg" class="d-block rounded-circle img-thumbnail" alt="Bill Gates" style="width:120px;height:120px;">
           </div>
           <div class="text-center d-block d-md-block" style="margin-top:10px">
             <h5>Bill Gates</h5>
@@ -585,7 +638,7 @@
         </div>
         <div class="carousel-item" data-bs-interval="10000">
           <div class="d-flex justify-content-center">
-          <img src="img/jobs1.jpg" class="d-block rounded-circle" alt="Steve Jobs" style="width:120px;height:120px;">
+          <img src="img/jobs1.jpg" class="d-block rounded-circle img-thumbnail" alt="Steve Jobs" style="width:120px;height:120px;">
           </div>
           <div class="text-center d-block d-md-block" style="margin-top:10px">
             <h5>Steve Jobs</h5>
@@ -594,7 +647,7 @@
         </div>
         <div class="carousel-item" data-bs-interval="10000">
           <div class="d-flex justify-content-center">
-          <img src="img/albert1.jpg" class="d-block rounded-circle" alt="Albert Einstein" style="width:120px;height:120px;">
+          <img src="img/albert1.jpg" class="d-block rounded-circle img-thumbnail" alt="Albert Einstein" style="width:120px;height:120px;">
           </div>
           <div class="text-center d-block d-md-block" style="margin-top:10px">
             <h5>Albert Einstein</h5>
@@ -614,7 +667,7 @@
     <!-- tutup list kutipan -->
     <!-- tutup kutipan -->
     <!-- footer -->
-    <div class="card-footer border-info text-center mt-5 p-4" style="background-color:#eee;">@copyright : <span id="tahunsekarang"></span>
+    <div class="card-footer text-center mt-5 p-5" style="background-color:#eee;border-top:1px solid #eee;">@copyright : <span id="tahunsekarang"></span>
       <!-- <button class="btn btn-primary geo">geo</button> -->
     </div>
     <!-- tutup footer -->
