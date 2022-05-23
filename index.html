@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/timeline.css">
@@ -14,10 +15,13 @@
 
     <style>
       .myshadow {
-        box-shadow:5px 5px 7px rgba(0,0,0,.4)!important;
+        box-shadow:5px 5px 6px rgba(0,0,0,.3)!important;
         transition:.5s;
       }
       .shadowbox {
+        box-shadow:4px 4px 4px rgba(0,0,0,.2); 
+      }
+      .shadowboxi {
         box-shadow:4px 4px 4px rgba(0,0,0,.2)!important; 
       }
       .textcolor {
@@ -26,6 +30,7 @@
       .popover {
         border:1px solid #eee;
         box-shadow:2px 2px 4px rgba(0,0,0,.3)!important;
+        min-width:300px;
       }
       .shadowtitle {
         text-shadow: 3px 3px 7px rgba(0,0,0,.2);
@@ -58,16 +63,18 @@
 
     <title>Ketut Krisna</title>
   </head>
-  <body style="overflow-x:hidden!important;position:relative;font-family: 'Varela Round', sans-serif;" id="beranda">
+  <body style="overflow-x:hidden!important;font-family: 'Varela Round', sans-serif;" id="beranda">
     <!-- navbar -->
     <nav class="navbar navbar-light fixed-top">
-      <div class="container">
+    <div class="container">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#!">
           <button data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasExample" class="navbar-toggler bg-info border border-info border-2 shadow" type="button" aria-expanded="false" aria-label="Toggle navigation">
-            <span data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasExample" class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
         </a>
       </div>
+    </div>
     </nav>
     <!-- tutup navbar -->
     <!-- jumbotron header -->
@@ -109,8 +116,8 @@
         <div class="card-body textcolor d-flex justify-content-between p-0">
           <div class="mt-1 ms-1">
           <h2 class="card-title mt-1 ms-3 shadowjudul" style="margin-bottom:-5px">KETUT KRISNA SANJAYA</h2>
-          <p class="card-title ms-3" style="margin-top:-0px!important;">Programmer | Web Developert | Video Editing</p>
-          <p class="card-title ps-3" style="text-align:justify;">Hallo! Perkenalkan saya Ketut Krisna Sanjaya, Saya Alumni Jurusan Teknik Informatika di Institut Informatika & Bisnis Darmajaya. Hal yang paling saya sukai adalah Membuat Program Web dan Video Editing. Ini adalah Personal Website saya</p>
+          <p class="card-title ms-3" style="margin-top:-0px!important;">Programmer | Web Developer | Video Editing</p>
+          <p class="card-title ps-3" style="text-align:justify;">Hallo! Perkenalkan saya Ketut Krisna Sanjaya, Saya Alumni Jurusan Teknik Informatika di Institut Informatika & Bisnis Darmajaya. Saya memili ketertarikan dan Fashion di Bidang IT, Hal yang paling saya sukai adalah Membuat Web Application dan Video Editting.</p>
           <ul class="list-group list-group-flush">
             <li class="list-group-item textcolor"><i class="bi bi-telephone-fill"></i> 0821-7947-1533</li>
             <li class="list-group-item textcolor"><i class="bi bi-envelope-fill"></i> ketutkrisna21@gmail.com</li>
@@ -162,7 +169,7 @@
         <div class="col-md-12 d-flex justify-content-center">
             <div class="main-timeline3 textcolor p-1" style="width:96%">
                 <div class="timeline">
-                    <a href="#!" class="timeline-content shadowbox" style="border-radius:10px;border:1px solid #eee;" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="#!" class="timeline-content shadowboxi" style="border-radius:10px;border:1px solid #eee;" data-aos="fade-up" data-aos-duration="1000">
                         <span class="year">SD</span>
                         <h3 class="title mt-1">2000 - 2006</h3>
                         <p class="description">
@@ -171,7 +178,7 @@
                     </a>
                 </div>
                 <div class="timeline">
-                    <a href="#!" class="timeline-content shadowbox" style="border-radius:10px;border:1px solid #eee;" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="#!" class="timeline-content shadowboxi" style="border-radius:10px;border:1px solid #eee;" data-aos="fade-up" data-aos-duration="1000">
                         <span class="year">SMP</span>
                         <h3 class="title mt-1">2006 - 2009</h3>
                         <p class="description">
@@ -180,7 +187,7 @@
                     </a>
                 </div>
                 <div class="timeline">
-                    <a href="#!" class="timeline-content shadowbox" style="border-radius:10px;border:1px solid #eee;" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="#!" class="timeline-content shadowboxi" style="border-radius:10px;border:1px solid #eee;" data-aos="fade-up" data-aos-duration="1000">
                         <span class="year">SMA</span>
                         <h3 class="title mt-1">2009 - 2012</h3>
                         <p class="description">
@@ -189,7 +196,7 @@
                     </a>
                 </div>
                 <div class="timeline">
-                    <a href="#!" class="timeline-content shadowbox" style="border-radius:10px;border:1px solid #eee;" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="#!" class="timeline-content shadowboxi" style="border-radius:10px;border:1px solid #eee;" data-aos="fade-up" data-aos-duration="1000">
                         <span class="year">Perguruan Tinggi</span>
                         <h3 class="title mt-1">2012 - 2017</h3>
                         <p class="description">
@@ -259,10 +266,10 @@
       .scaleskill {
         transition:.3s;
         box-shadow:2px 2px 2px rgba(0,0,0,.2);
-        width:120px!important;
+        width:130px!important;
       }
       .scaleskill:hover {
-        transform:scale(1.2);
+        transform:scale(1.1);
         box-shadow:3px 3px 3px rgba(0,0,0,.3);
         transition:.3s;
       }
@@ -328,7 +335,7 @@
                 </div>
               </div>
               <div class="row" data-aos="zoom-in" data-aos-duration="1000">
-                <h5 class="text-center mt-5 textcolor">VERSION COTROL</h5>
+                <h5 class="text-center mt-5 textcolor">VERSION COTROL SYSTEM</h5>
                 <div style="display:flex;flex-wrap:wrap;justify-content:center;">
                   <div class="card m-2 scaleskill">
                     <img src="img/skill/gitweb.png" class="card-img-top img-thumbnail" alt="html" width="50">
@@ -419,7 +426,7 @@
     <div class="d-flex justify-content-center">
     <div class="row textcolor" style="width:98%;">
       <div class="col-12 col-sm-6 col-md-4 col-xl-3" style="padding:10px;">
-        <div class="card shadow hovercard p-1" data-aos="fade-down" data-aos-duration="1000">
+        <div class="card shadowbox hovercard p-3 mb-2" data-aos="fade-down" data-aos-duration="1000">
           <div class="hiddencard">
             <img src="img/portfolio/meinviteyou.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
           </div>
@@ -447,7 +454,7 @@
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-xl-3" style="padding:10px;">
-        <div class="card shadow hovercard p-1" data-aos="fade-down" data-aos-duration="1000">
+        <div class="card shadowbox hovercard p-3 mb-2" data-aos="fade-down" data-aos-duration="1000">
           <div class="hiddencard">
           <img src="img/portfolio/lightcreative.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
           </div>
@@ -475,7 +482,7 @@
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-xl-3" style="padding:10px;">
-        <div class="card shadow hovercard p-1" data-aos="fade-down" data-aos-duration="1000">
+        <div class="card shadowbox hovercard p-3 mb-2" data-aos="fade-down" data-aos-duration="1000">
           <div class="hiddencard">
           <img src="img/portfolio/matacode.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
           </div>
@@ -503,7 +510,7 @@
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-xl-3" style="padding:10px;">
-        <div class="card shadow hovercard p-1" data-aos="fade-down" data-aos-duration="1000">
+        <div class="card shadowbox hovercard p-3 mb-2" data-aos="fade-down" data-aos-duration="1000">
           <div class="hiddencard">
           <img src="img/portfolio/uangkaget.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
           </div>
@@ -524,7 +531,7 @@
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-xl-3" style="padding:10px;">
-        <div class="card shadow hovercard p-1" data-aos="fade-down" data-aos-duration="1000">
+        <div class="card shadowbox hovercard p-3 mb-2" data-aos="fade-down" data-aos-duration="1000">
           <div class="hiddencard">
           <img src="img/portfolio/linkids.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
           </div>
@@ -552,7 +559,7 @@
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-xl-3" style="padding:10px;">
-        <div class="card shadow hovercard p-1" data-aos="fade-down" data-aos-duration="1000">
+        <div class="card shadowbox hovercard p-3 mb-2" data-aos="fade-down" data-aos-duration="1000">
           <div class="hiddencard">
           <img src="img/portfolio/stt.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
           </div>
@@ -591,12 +598,13 @@
     </div>
     <div class="row">
       <div class="col-12 text-center ps-4 pe-4 textcolor">
-        <p>Saya memili ketertarikan dan Fashion di Bidang IT terutama pada bidang Program dan Multimedia seperti Program Website,Editing Video dan Desain Grafis Saya juga merupakan penggemar olahraga Sepakbola, volly dan Bulu Tangkis. Dulu saya sangat suka bermain game, tapi sekarang sudah jarang karena lebih tertarik dengan membuat program web. Saya sering menonton film, film kesukaan saya adalah film action dan saya juga suka mendengarkan musik, musik saya sukai beraliran deathcore dan metalcore.</p>
+        <!-- <p>Saya memili ketertarikan dan Fashion di Bidang IT terutama pada bidang Program dan Multimedia seperti Program Website,Editing Video dan Desain Grafis Saya juga merupakan penggemar olahraga Sepakbola, volly dan Bulu Tangkis. Dulu saya sangat suka bermain game, tapi sekarang sudah jarang karena lebih tertarik dengan membuat program web. Saya sering menonton film, film kesukaan saya adalah film action dan saya juga suka mendengarkan musik, musik saya sukai beraliran deathcore dan metalcore.</p> -->
       </div>
     </div>
     <style>
       .scalehobi {
         transition:.3s;
+        cursor:pointer;
       }
       .shadowhobi {
         box-shadow:2px 2px 5px rgba(0,0,0,.2);
@@ -611,22 +619,22 @@
     <!-- list hobi -->
     <div class="row pe-4 ps-4">
       <div class="col-12 col-md-6 col-xl-3">
-        <div class="text-center fs-1 p-2 textcolor mt-3 shadowhobi scalehobi" id="tolahraga" data-bs-toggle="popover" data-bs-placement="top" title="Olahraga" data-bs-content="<div class='text-success fw-bold'>1.Sepak Bola <br> 2.Bulu Tangkis <br> 3.Volly</div>" data-aos="fade-up" data-aos-duration="1000" style="border-left:4px solid #198754;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
-          <i class="bi bi-life-preserver text-success"></i> OlahRaga
+        <div class="text-center fs-1 p-2 textcolor mt-3 shadowhobi scalehobi" id="tolahraga" data-bs-toggle="popover" data-bs-placement="bottom" title="Olah Raga" data-bs-content="<div class='text-success fw-bold'>1.Sepak Bola <br> 2.Bulu Tangkis <br> 3.Volly</div>" data-aos="fade-up" data-aos-duration="1000" style="border-left:4px solid #198754;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
+          <i class="bi bi-life-preserver text-success"></i> Olah Raga
         </div>
       </div>
       <div class="col-12 col-md-6 col-xl-3">
-        <div class="text-center fs-1 p-2 textcolor mt-3 shadowhobi scalehobi" id="tgame" data-bs-toggle="popover" data-bs-placement="top" title="Game" data-bs-content="<div class='text-danger fw-bold'>1.PES <br> 2.Guitar Hero <br> 3.Class Of Gods <br> 4.Point Blank</div>" data-aos="fade-up" data-aos-duration="1000" style="border-left:4px solid #D9534F;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
+        <div class="text-center fs-1 p-2 textcolor mt-3 shadowhobi scalehobi" id="tgame" data-bs-toggle="popover" data-bs-placement="bottom" title="Game" data-bs-content="<div class='text-danger fw-bold'>1.PES <br> 2.Guitar Hero <br> 3.Class Of Gods <br> 4.Point Blank</div>" data-aos="fade-up" data-aos-duration="1000" style="border-left:4px solid #D9534F;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
           <i class="bi bi-controller text-danger"></i> Game
         </div>
       </div>
       <div class="col-12 col-md-6 col-xl-3">
-        <div class="text-center fs-1 p-2 textcolor mt-3 shadowhobi scalehobi" id="tfilm" data-bs-toggle="popover" data-bs-placement="top" title="Film" data-bs-content="<div class='text-info fw-bold'>1.Actions <br> 2.Hacker <br> 3.Anime</div>" data-aos="fade-up" data-aos-duration="1000" style="border-left:4px solid #5BC0DE;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
+        <div class="text-center fs-1 p-2 textcolor mt-3 shadowhobi scalehobi" id="tfilm" data-bs-toggle="popover" data-bs-placement="bottom" title="Film" data-bs-content="<div class='text-info fw-bold'>1.Actions <br> 2.Hacker <br> 3.Anime</div>" data-aos="fade-up" data-aos-duration="1000" style="border-left:4px solid #5BC0DE;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
           <i class="bi bi-film text-info"></i> Film
         </div>
       </div>
       <div class="col-12 col-md-6 col-xl-3">
-        <div class="text-center fs-1 p-2 textcolor mt-3 shadowhobi scalehobi" id="tmusik" data-bs-toggle="popover" data-bs-placement="top" title="Musik" data-bs-content="<div class='text-warning fw-bold'>1.Deathcore <br> 2.Ska <br> 3.Rock <br> 4.Dangdut Modern</div>" data-aos="fade-up" data-aos-duration="1000" style="border-left:4px solid #F0AD4E;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
+        <div class="text-center fs-1 p-2 textcolor mt-3 shadowhobi scalehobi" id="tmusik" data-bs-toggle="popover" data-bs-placement="bottom" title="Musik" data-bs-content="<div class='text-warning fw-bold'>1.Deathcore <br> 2.Ska <br> 3.Rock <br> 4.Dangdut Modern</div>" data-aos="fade-up" data-aos-duration="1000" style="border-left:4px solid #F0AD4E;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
           <i class="bi bi-music-note-beamed text-warning"></i> Musik
         </div>
       </div>
@@ -642,11 +650,12 @@
     <!-- kutipan -->
     <div class="row text-center">
       <div class="col-12 mt-5" id="kutipan">
-        <h1 class="mt-5 textcolor shadowtitle"><i class="bi bi-hash"></i> KUTIPAN FAVORIT</h1>
+        <h1 class="mt-5 textcolor shadowtitle"><i class="bi bi-chat-right-quote-fill"></i> KUTIPAN FAVORIT</h1>
       </div>
     </div>
     <!-- list kutipan -->
-    <div id="carouselExampleDark" class="carousel carousel-dark slide m-3 shadowbox" style="border-radius:10px;border:1px solid #eee;" data-bs-ride="carousel">
+    <div class="d-flex justify-content-center">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide m-3 shadowbox" style="border-radius:10px;border:1px solid #eee;width:95%;" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -690,6 +699,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    </div>
     <!-- tutup list kutipan -->
     <!-- tutup kutipan -->
     <!-- footer -->
@@ -709,13 +719,12 @@
         <div>
           <ul class="list-group list-group-flush">
             <a href="#beranda" class="list-group-item"><i class="bi bi-house-door-fill"></i> Beranda</a>
-            <!-- <a href="#tentang" class="list-group-item"><i class="bi bi-person-lines-fill"></i> Tentang Saya</a> -->
             <a href="#pendidikan" class="list-group-item"><i class="bi bi-book-fill"></i> Pendidikan</a>
             <a href="#pengalaman" class="list-group-item"><i class="bi bi-briefcase-fill"></i> Pengalaman Organisasi</a>
             <a href="#kemampuan" class="list-group-item"><i class="bi bi-list-stars"></i> Kemampuan</a>
             <a href="#projek" class="list-group-item"><i class="bi bi-stack"></i> Portfolio</a>
             <a href="#hobi" class="list-group-item"><i class="bi bi-heart-fill"></i> Hobi</a>
-            <a href="#kutipan" class="list-group-item"><i class="bi bi-hash"></i> Kutipan Favorit</a>
+            <a href="#kutipan" class="list-group-item"><i class="bi bi-chat-right-quote-fill"></i> Kutipan Favorit</a>
           </ul>
         </div>
       </div>
@@ -729,13 +738,17 @@
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+   <!--  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
       var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
       var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl,{'trigger':'hover','html':true})
@@ -810,12 +823,16 @@
       // $(".navbar-toggler").on('click',function(){
       //   $('.modal-backdrop').show()
       // })
-      // $('.modal-backdrop').on('click',function(){
-      //   let back = document.querySelectorAll('.modal-backdrop');
-      //   // back[0].style.display ='none';
-      //   console.log(back[0]);
-      //   // $('.modal-backdrop').hide()
-      // })
+      $('body').on('click','.offcanvas-backdrop',function(){
+        setTimeout(function() {
+          $('body').css('overflow-x','hidden');
+        },300);
+      });
+      $('body').on('click','.keluarcanvas',function(){
+        setTimeout(function() {
+          $('body').css('overflow-x','hidden');
+        },300);
+      });
 
       // $('.geo').on('click',function(){
       //   if (navigator.geolocation)navigator.geolocation.getCurrentPosition(function(position){        console.log(position);
