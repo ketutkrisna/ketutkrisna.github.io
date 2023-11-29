@@ -10,7 +10,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/timeline.css">
+    <link rel="stylesheet" type="text/css" href="css/animasi-text-kemi.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
@@ -49,7 +60,7 @@
         transition:.5s;
       }
       .scaleprofildekstop:hover {
-        transform:scale(1.2) translate(-20px,0px);
+        transform:scale(1.1) translate(-20px,0px);
         transition:.5s;
       }
       /*.scalesosmed {
@@ -69,7 +80,7 @@
     <div class="container">
       <div class="container-fluid">
         <a class="navbar-brand" href="#!">
-          <button data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasExample" class="navbar-toggler bg-info border border-info border-2 shadow" type="button" aria-expanded="false" aria-label="Toggle navigation">
+          <button data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasExample" class="navbar-toggler shadow" type="button" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#03a9f4;">
             <span class="navbar-toggler-icon"></span>
           </button>
         </a>
@@ -78,7 +89,7 @@
     </nav>
     <!-- tutup navbar -->
     <!-- jumbotron header -->
-    <div class="" style="height:450px;background-image:url('img/kk3d1.png');background-size:300px 300px;background-position:50% 50px;background-repeat:no-repeat;background-attachment:fixed;border-bottom:1px solid #eee;">
+    <div class="" style="height:450px;background-image:url('img/kk3d3.png');background-size:300px 300px;background-position:50% 50px;background-repeat:no-repeat;background-attachment:fixed;border-bottom:1px solid #eee;">
       <div class="container">
       </div>
     </div>
@@ -86,23 +97,29 @@
     <!-- card info -->
     <div class="row d-lg-none d-xl-block d-xl-none d-xxl-block">
       <div class="col-12 d-flex justify-content-center">
-      <div class="card shadowbox" data-aos="fade-down" data-aos-duration="1000" style="width:95%;margin-top:-110px;border-radius:10px;border:1px solid #eee;">
+      <div class="card shadowbox pb-4" data-aos="fade-down" data-aos-duration="1000" style="width:95%;margin-top:-110px;border-radius:10px;border:1px solid #eee;">
         <img src="img/pp.jpg" class="rounded-circle img-thumbnail scaleprofilmobile" alt="foto profil" style="position:absolute;margin:-90px auto;width:150px;height:150px;left:0;right:0;">
         <div class="card-body textcolor">
-          <h2 class="card-title text-center mt-5 shadowjudul" style="margin-bottom:-5px">KETUT KRISNA SANJAYA</h2>
-          <p class="card-title text-center" style="margin-top:-0px!important;">Web design | Web Programming | Video Editing</p>
-          <p class="card-title ps-3 pe-3" style="text-align:justify;">Hallo! Perkenalkan saya Ketut Krisna Sanjaya, Saya S1 Teknik Informatika di Institut Informatika & Bisnis Darmajaya. Saya memiliki ketertarikan dan passion di Bidang IT, Hal yang paling saya sukai adalah menyelesaikan tantangan programming.</p>
-          <ul class="list-group list-group-flush">
+          <div class="content-kemi d-flex justify-content-center">
+	        <h2 class="card-title mt-5 shadowjudul" style="margin-bottom:-5px;font-family: 'Bowlby One SC', sans-serif;font-size: 2em !important;">KETUT KRISNA</h2>
+	        <h2 class="card-title mt-5 shadowjudul" style="margin-bottom:-5px;font-family: 'Bowlby One SC', sans-serif;font-size: 2em !important;">KETUT KRISNA</h2>
+          </div>
+          <p class="card-title text-center fw-bold animate__animated animate__bounceInLeft animate__delay-1s" style="margin-top:80px!important;">Web design | Web Programming | Video Editting</p>
+          <p class="card-title ps-3 pe-3 animate__animated animate__bounceInLeft animate__delay-2s" style="text-align:justify;font-family: 'Inconsolata', monospace;">Hallo! Perkenalkan saya Ketut Krisna Sanjaya, Saya S1 Teknik Informatika di Institut Informatika & Bisnis Darmajaya. Saya memiliki ketertarikan dan passion di Bidang IT, Hal yang paling saya sukai adalah menyelesaikan tantangan programming.</p>
+          <ul class="list-group list-group-flush animate__animated animate__bounceInLeft animate__delay-3s">
             <li class="list-group-item textcolor"><i class="bi bi-telephone-fill"></i> 0821-7947-1533</li>
             <li class="list-group-item textcolor"><i class="bi bi-envelope-fill"></i> ketutkrisna21@gmail.com</li>
-            <li class="list-group-item textcolor"><a target="_blank" href="img/cvku_uptodate.pdf" type="button" class="btn btn-sm btn-info shadow-sm text-white">CURRICULUM VITAE</a></li>
+            <li class="list-group-item textcolor"></li>
            <!--  <li class="list-group-item d-flex"><i class="bi bi-geo-alt-fill me-1"></i> Way Kanan, Bandar Lampung, Lampung, Indonesia</li> -->
           </ul>
-          <span class="ms-3">
+          <span class="ms-3 animate__animated animate__bounceInLeft animate__delay-3s" style="position:absolute;bottom:0;">
             <a href="https://api.whatsapp.com/send?phone=+6282179471533"><i class="bi bi-whatsapp text-success fs-1 me-2"></i></a>
             <a href="https://www.facebook.com/ketut.k.ii/"><i class="bi bi-facebook text-primary fs-1 me-2"></i></a>
             <a href="https://www.instagram.com/ketutkrisna21/"><i class="bi bi-instagram text-danger fs-1 me-2"></i></a>
             <a href="https://twitter.com/ketut_krisna"><i class="bi bi-twitter text-info fs-1 me-2"></i></a>
+          </span>
+          <span style="position:absolute;bottom:10px;right:30px;z-index:12;">
+          	<a target="_blank" href="img/cvku_uptodate.pdf" type="button" class="btn btn-sm btn-info shadow-sm text-white animate__animated animate__pulse animate__delay-4s animate__infinite">CV</a>
           </span>
         </div>
       </div>
@@ -115,24 +132,30 @@
       <div class="card shadowbox" data-aos="fade-down"data-aos-duration="1000" style="width:95%;margin-top:-110px;overflow:hidden;border-radius:10px;border:1px solid #eee;">
         <div class="card-body textcolor d-flex justify-content-between p-0">
           <div class="mt-1 ms-1">
-          <h2 class="card-title mt-1 ms-3 shadowjudul" style="margin-bottom:-5px">KETUT KRISNA SANJAYA</h2>
-          <p class="card-title ms-3" style="margin-top:-0px!important;">Web design | Web Programming | Video Editing</p>
-          <p class="card-title ps-3" style="text-align:justify;">Hallo! Perkenalkan saya Ketut Krisna Sanjaya, Saya S1 Teknik Informatika di Institut Informatika & Bisnis Darmajaya. Saya memiliki ketertarikan dan passion di Bidang IT, Hal yang paling saya sukai adalah menyelesaikan tantangan programming.</p>
-          <ul class="list-group list-group-flush">
+          <div class="content-kemi">
+	        <h2 class="card-title mt-3 ms-3 shadowjudul" style="margin-bottom:-5px;font-family: 'Bowlby One SC', sans-serif;">KETUT KRISNA</h2>
+	        <h2 class="card-title mt-3 ms-3 shadowjudul" style="margin-bottom:-5px;font-family: 'Bowlby One SC', sans-serif;">KETUT KRISNA</h2>
+          </div>
+          <p class="card-title ms-3 fw-bold animate__animated animate__bounceInLeft animate__delay-1s" style="font-family: 'Roboto Mono', monospace;margin-top:70px">Web design | Web Programming | Video Editting</p>
+          <p class="card-title ps-3 mt-3 animate__animated animate__bounceInLeft animate__delay-2s" style="text-align:justify;font-family: 'Roboto Mono', monospace;">Hallo! Perkenalkan saya Ketut Krisna Sanjaya, Saya S1 Teknik Informatika di Institut Informatika & Bisnis Darmajaya. Saya memiliki ketertarikan dan passion di Bidang IT, Hal yang paling saya sukai adalah menyelesaikan tantangan programming.</p>
+          <ul class="list-group list-group-flush mt-3 animate__animated animate__bounceInLeft animate__delay-3s">
             <li class="list-group-item textcolor"><i class="bi bi-telephone-fill"></i> 0821-7947-1533</li>
             <li class="list-group-item textcolor"><i class="bi bi-envelope-fill"></i> ketutkrisna21@gmail.com</li>
-            <li class="list-group-item textcolor"><a target="_blank" href="img/cvku_uptodate.pdf" type="button" class="btn btn-sm btn-info shadow-sm text-white">CURRICULUM VITAE</a></li>
+            <li class="list-group-item textcolor mt-3"></li>
           </ul>
-          <span class="ms-3">
+          <span class="ms-3 animate__animated animate__bounceInLeft animate__delay-3s" style="position:absolute;bottom:0;">
             <a href="https://api.whatsapp.com/send?phone=+6282179471533"><i class="bi bi-whatsapp text-success me-2" style="font-size:30px;"></i></a>
             <a href="https://www.facebook.com/ketut.k.ii/"><i class="bi bi-facebook text-primary me-2" style="font-size:30px;"></i></a>
             <a href="https://www.instagram.com/ketutkrisna21/"><i class="bi bi-instagram text-danger me-2" style="font-size:30px;"></i></a>
             <a href="https://twitter.com/ketut_krisna"><i class="bi bi-twitter text-info me-2" style="font-size:30px;"></i></a>
           </span>
+          <span style="position:absolute;bottom:10px;right:30px;z-index:12;">
+          	<a style="background-color:#03a9f4;" target="_blank" href="img/cvku_uptodate.pdf" type="button" class="btn btn-sm shadow-sm text-white animate__animated animate__pulse animate__delay-4s animate__infinite">CURRICULUM VITAE</a>
+          </span>
           </div>
           <div>
             <!-- <a target="_blank" style="position:absolute;bottom:20px;left:20px;" href="img/cvku.jpg" type="button" class="btn btn-sm btn-info shadow-sm text-white">CURRICULUM VITAE</a> -->
-            <img src="img/pp1.png" class="scaleprofildekstop" alt="foto profil" style="width:500px">
+            <img src="img/pp.png" class="scaleprofildekstop" alt="foto profil" style="width:500px;">
           </div>
         </div>
       </div>
@@ -410,6 +433,35 @@
             </div>            
             <p class="card-text">
               <a href="http://matacode.meinviteyou.com/" target="_blank"><span class="btn btn-sm text-white btn-info float-end fw-bold">Lihat <i class="bi bi-arrow-right-square"></i></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3" style="padding:10px;">
+        <div class="card shadowbox hovercard p-3 mb-2" data-aos="fade-down" data-aos-duration="1000">
+          <div class="hiddencard">
+          <img src="img/portfolio/catatpinjaman1.JPG" class="card-img-top imghover" alt="undangan digital" style="max-height:250px;">
+          </div>
+          <div class="card-body p-1">
+            <h5 class="card-title">CATAT PINJAMAN</h5>
+            <p style="line-height:17px;" class="readcount">Catat pinjaman merupakan aplikasi untuk mencatat pinjaman atau hutang agar lebih tertata dengan rapi.</p>
+            <p style="line-height:16px;color:#aaa;margin-top:-10px;">Teknologi yang dipakai:</p>
+            <div style="background-color:rgba(255,255,255,.9);line-height:10px;margin-top:-10px;">
+              <i class="bi bi-filetype-php fw-bold tampiltooltip" style="color:#6207f5;font-size:25px;" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP"></i>
+              <span class="tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="CodeIgniter">
+              <svg id="Layer_1" style="width:20px;top:-50px;height:35px;" version="1.1" viewBox="0 60 270 350">
+                <path class="st0" fill="#EE4323" d="M85.2,303.1c-18-7.8-34.8-27.5-34.8-47.7c0-22,13.9-40.7,31.3-53c-2.1,7.9-3.2,15.1,1.9,22.2   c4.8,6.6,13.2,9.8,21.2,8c18.6-4.1,19.4-24.5,8.4-36.4C102.3,184.3,91.8,171,96,153.9c2.1-8.6,7.3-16.6,14-22.3   c-5.1,13.5,9.4,26.7,19,33.4c16.6,11.5,34.9,20.1,50.2,33.6c16.1,14.1,28,33.3,25.6,55.4c-2.6,24-21.7,40.7-43.1,49.2   c45.3-10,92-45.1,93-95.3c0.8-41.3-27.5-73.1-62.6-91.3l-1.8-1c1,2.3,1.3,4.3,1.2,6.1c0.3-1.3,0.5-2.7,0.6-4.1   c0,1.7-0.2,3.4-0.6,4.9l0.1-0.8c-0.5,2.2-1.4,4.3-2.6,6.2l0.5-0.6c-7,11.6-26,14.1-35.3,2.1c-15.1-19.3,0.3-40.2,2.5-60.7   c2.7-25.7-13.4-50.6-33.4-65.5c11,17.8-3.5,41.3-15.1,54.5c-11.2,12.8-24.9,23.4-37.3,35c-13.3,12.4-26.1,25.5-37.1,40.1   c-21.9,29.2-35.3,66-25.5,102.4C18,271.7,49.6,294.9,85.2,303.1L85.2,303.1z"/>
+              </svg>
+              </span>
+              <img  class="tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="JQuery"style="margin-top:-5px;" src="img/jqueryicon.png" width="30" height="30" type="image">
+              <i class="bi bi-filetype-js fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript" style="color:#f5dd07;font-size:25px;"></i>
+              <i class="bi bi-bootstrap fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap" style="color:#8a07f5;font-size:25px;"></i>
+              <i class="bi bi-filetype-html fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML" style="color:#f58607;font-size:25px;"></i>
+              <i class="bi bi-filetype-css fw-bold tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS" style="color:#0752f5;font-size:25px;"></i>
+              <img  class="tampiltooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="MySql"style="margin-top:-5px;" src="img/sql.svg" width="30" height="30" type="image/svg+xml">
+            </div>            
+            <p class="card-text">
+              <a href="https://catatpinjaman.meinviteyou.com/" target="_blank"><span class="btn btn-sm text-white btn-info float-end fw-bold">Lihat <i class="bi bi-arrow-right-square"></i></span></a>
             </p>
           </div>
         </div>
@@ -711,6 +763,15 @@
         position:absolute;
         bottom:0
       }
+      .animasili{
+      	transition:.2s;
+      }
+      .animasili:hover{
+      	transform:translate(20px, 0);
+      }
+      .text-in{
+      	color:#03a9f4;
+      }
     </style>
     <!-- kutipan -->
     <div class="row text-center">
@@ -774,7 +835,7 @@
     <!-- tutup footer -->
     <!-- side bar -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="offcanvasExampleLabel" style="width:300px">
-      <div class="offcanvas-header" style="background-color:black;min-height:200px">
+      <div class="offcanvas-header" style="background-color:#03a9f4;min-height:200px">
         <div style="">
         <img src="img/kkwhite.png" style="width:170px;height:170px;position:absolute;top:10px;left:0;right:0;margin:0 auto;">
         </div>
@@ -783,13 +844,13 @@
       <div class="offcanvas-body">
         <div>
           <ul class="list-group list-group-flush">
-            <a href="#beranda" class="list-group-item"><i class="bi bi-house-door-fill"></i> Beranda</a>
-            <a href="#pendidikan" class="list-group-item"><i class="bi bi-book-fill"></i> Pendidikan</a>
-            <a href="#pengalaman" class="list-group-item"><i class="bi bi-briefcase-fill"></i> Pengalaman Organisasi</a>
-            <a href="#kemampuan" class="list-group-item"><i class="bi bi-list-stars"></i> Kemampuan</a>
-            <a href="#projek" class="list-group-item"><i class="bi bi-stack"></i> Portfolio</a>
-            <a href="#hobi" class="list-group-item"><i class="bi bi-heart-fill"></i> Hobi</a>
-            <a href="#kutipan" class="list-group-item"><i class="bi bi-chat-right-quote-fill"></i> Kutipan Favorit</a>
+            <a href="#beranda" class="list-group-item animasili"><i class="bi bi-house-door-fill text-in"></i> Beranda</a>
+            <a href="#kemampuan" class="list-group-item animasili"><i class="bi bi-list-stars text-in"></i> Kemampuan</a>
+            <a href="#projek" class="list-group-item animasili"><i class="bi bi-stack text-in"></i> Portfolio</a>
+            <a href="#pendidikan" class="list-group-item animasili"><i class="bi bi-book-fill text-in"></i> Pendidikan</a>
+            <a href="#pengalaman" class="list-group-item animasili"><i class="bi bi-briefcase-fill text-in"></i> Pengalaman Organisasi</a>
+            <a href="#hobi" class="list-group-item animasili"><i class="bi bi-heart-fill text-in"></i> Hobi</a>
+            <a href="#kutipan" class="list-group-item animasili"><i class="bi bi-chat-right-quote-fill text-in"></i> Kutipan Favorit</a>
           </ul>
         </div>
       </div>
